@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function Iphone() {
   const [videos, setVideos] = useState([]);
   useEffect(() => {
-    fetch("../../../public/Iphone.json")
+    fetch("/Iphone.json")
       .then((data) => data.json())
       .then((data) => {
         setVideos(() => data.products); // Update the state with the website HTML

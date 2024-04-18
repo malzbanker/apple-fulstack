@@ -34,9 +34,8 @@ function App() {
      
       <Routes>
         <Route path="/" element={<ShearedLayout/> }>
-          
         
-        <Route path="/main" element={ <Main/>} />
+        <Route path="/" element={ <Main/>} />
         <Route path="Mac" element={<Mac />} />
           <Route path="iphone" element={<Iphone />} />
           <Route path="iphone/:productID" element={<Pagelayout/>}/>

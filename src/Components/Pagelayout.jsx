@@ -8,7 +8,7 @@ import Four04 from '../Pages/Four04/Four04';
     const[product, setproduct]= useState([]);
     useEffect(() => {
     
-        fetch("http://localhost:3001/malede")
+        fetch("/Iphone.json")
           .then(response => response.json())
           .then(data => {
              // Update the state with the website HTML
@@ -24,22 +24,12 @@ import Four04 from '../Pages/Four04/Four04';
     //   let flip=true;
       if(product.length){
   return (
-    
-    
-      // product_id, product_url,product_name, description_id,product_brief_description,product_description,product_link,
-      // starting_price, price_range
+
       <div className='mac mb-5'>{productID}
               <div className=''>
                 
                 {product?.map((product) => {
-                
-      
-      
-        
-      
-                
-                  // let Vid = applevideo.id.videoId;
-                  // let vd_link = https://www.youtube.com/watch?v=${Vid};
+             
                   let product_div=(
                   
                     <div className='mb-5'>
